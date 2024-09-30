@@ -1,11 +1,7 @@
 package modell;
 
-import static java.time.Clock.system;
-import java.util.Scanner;
-
 public class Jatek {
     private Lada[] ladak;
-    private static final Scanner scr = new Scanner(System.in);
     private int valasztas;
 
     public Jatek() {
@@ -15,7 +11,6 @@ public class Jatek {
         ladak[2] =  new Lada("bronz", "Az arany hazudik");
                 
         System.out.println(kezdes());
-        valasztas();
     }
 
     private String kezdes() {
@@ -28,12 +23,6 @@ public class Jatek {
         }
         
         return s;
-    }
-
-    private void valasztas() {
-        System.out.println("Melyikben van a kincs?");
-        valasztas = scr.nextInt()-1;
-        System.out.println(ellenorzes());
     }
     
     private String ellenorzes(){
