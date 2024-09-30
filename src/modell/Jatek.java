@@ -13,7 +13,7 @@ public class Jatek {
         System.out.println(kezdes());
     }
 
-    private String kezdes() {
+    public String kezdes() {
         String s = "hol a kincs? csak egy allitas ista\n";
         int i = 1;
         for (Lada lada : ladak) {
@@ -25,7 +25,7 @@ public class Jatek {
         return s;
     }
     
-    private String ellenorzes(){
+    public String ellenorzes(){
         String talalt = "Gratulalok, megtalaltad a kincset";
         String nemtalalt = "Sajnos ures a lada";
         return ladak[valasztas].isKincs() ? talalt : nemtalalt;

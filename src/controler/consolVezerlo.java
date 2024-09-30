@@ -13,6 +13,7 @@ public class consolVezerlo {
     }
     
     void start(){
-        
+        nezet.megjelenites(modell.kezdes());
+        nezet.megjelenites(modell.ellenorzes());
     }
 }
